@@ -180,7 +180,7 @@ h1 {
 }
 #colorpickerHolder2 .colorpicker, #colorpickerHolder1 .colorpicker, #colorpickerHolder3 .colorpicker {
 	background-image: url(../../images/color-picker/custom_background.png);
-	background-position-y: -11px;
+	background-position: 0 -11px;
 	position: absolute;
 	bottom: 0;
 	left: 16px;
