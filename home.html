@@ -1,0 +1,571 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+    <link href="styles/colorpicker/colorpicker.css" rel="stylesheet" type="text/css">
+    <link href="styles/colorpicker/layout.css" rel="stylesheet" type="text/css">
+    <!-- <link href="styles/bootstrap/bootstrap.css" rel="stylesheet" type="text/css"> -->
+    <link href="styles/fonts.css" rel="stylesheet" type="text/css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="lib/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="lib/colorpicker/colorpicker.js"></script>
+    <script type="text/javascript" src="lib/colorpicker/eye.js"></script>
+    <script type="text/javascript" src="lib/colorpicker/utils.js"></script>
+    <script type="text/javascript" src="lib/colorpicker/layout.js?ver=1.0.2"></script>
+
+    <title>Chameleon Theme - Your Slogan Goes Here</title>
+
+  </head>
+  <body>
+    <div class="control-panel main">
+      <a href="#" id="trigger">
+        <div></div>
+      </a>
+      <div class="cp-icons-wrapper">
+        <div class="cp-icon-container">
+          <a id="bg-color-icon" href="#">
+            <img src="images/cp-color-icon.png">
+          </a>
+        </div>
+        <div class="cp-icon-container">
+          <a id="bg-texture-icon" href="#">
+            <img src="images/cp-texture-icon.png">
+          </a>
+        </div>
+        <div class="cp-icon-container">
+          <a id="bg-texture-text-icon" href="#">
+            <img src="images/cp-bg-texture-text-icon.png">
+          </a>
+        </div>
+        <div class="cp-icon-container">
+          <a id="cp-body-font-color-icon" href="#">
+            <img src="images/cp-body-font-color-icon.png">
+          </a>
+        </div>
+        <div class="cp-icon-container">
+          <a id="cp-header-font-color-icon" href="#">
+            <img src="images/cp-header-font-color-icon.png">
+          </a>
+        </div>
+      </div>
+      <div class="cp-binds-wrapper">
+        <div id="bg-color-bind" class="hover-bind"></div>
+        <div id="bg-texture-bind" class="hover-bind"></div>
+        <div id="bg-texture-text-bind" class="hover-bind"></div>
+        <div id="body-font-color-bind" class="hover-bind"></div>
+        <div id="header-font-color-bind" class="hover-bind"></div>
+      </div>
+      <div class="cp-bg-gradient"></div>
+      <div class="reset small-font">Reset</div>
+    </div>
+
+    <div id="" class="control-panel bg-colors-panel">
+      <h3 class="large-font">Background Color</h3>
+      <p class="small-font">Choose a Custom Background Color</p>
+      <div id="colorpickerHolder2"></div>
+    </div>
+
+    <div class="control-panel bg-textures-panel">
+      <h3 class="large-font">Background Textures</h3>
+      <p class="small-font">Choose a custom BG image</p>
+      <div class="textures-icons-wrapper">
+        <div>
+          <img id="texture-01" src="images/texture-icons/texture-icon-01.png">
+        </div>
+        <div>
+          <img id="texture-02" src="images/texture-icons/texture-icon-02.png">
+        </div>
+        <div>
+          <img id="texture-03" src="images/texture-icons/texture-icon-03.png">
+        </div>
+        <div>
+          <img id="texture-04" src="images/texture-icons/texture-icon-04.png">
+        </div>
+        <div>
+          <img id="texture-05" src="images/texture-icons/texture-icon-05.png">
+        </div>
+        <div>
+          <img id="texture-06" src="images/texture-icons/texture-icon-06.png">
+        </div>
+        <div>
+          <img id="texture-07" src="images/texture-icons/texture-icon-07.png">
+        </div>
+        <div>
+          <img id="texture-08" src="images/texture-icons/texture-icon-08.png">
+        </div>
+        <div>
+          <img id="texture-09" src="images/texture-icons/texture-icon-09.png">
+        </div>
+        <div>
+          <img id="texture-10" src="images/texture-icons/texture-icon-10.png">
+        </div>
+        <div>
+          <img id="texture-11" src="images/texture-icons/texture-icon-11.png">
+        </div>
+        <div>
+          <img id="texture-12" src="images/texture-icons/texture-icon-12.png">
+        </div>
+        <div>
+          <img id="texture-13" src="images/texture-icons/texture-icon-13.png">
+        </div>
+        <div>
+          <img id="texture-14" src="images/texture-icons/texture-icon-14.png">
+        </div>
+        <div>
+          <img id="texture-15" src="images/texture-icons/texture-icon-15.png">
+        </div>
+        <div>
+          <img id="texture-16" src="images/texture-icons/texture-icon-16.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="control-panel bg-textures-text-panel">
+      <div class="textures-list-wrapper">
+        <h3 class="large-font">Background Textures</h3>
+        <select id="currentTexture" size="4" disabled>
+           <option id="texture-current-01" value="01">Texture № 1</option>
+           <option id="texture-current-02" value="02">Texture № 2</option>
+           <option id="texture-current-03" value="03">Texture № 3</option>
+           <option id="texture-current-04" value="04">Texture № 4</option>
+           <option id="texture-current-05" value="05" selected>Texture № 5</option>
+           <option id="texture-current-06" value="06">Texture № 6</option>
+           <option id="texture-current-07" value="07">Texture № 7</option>
+           <option id="texture-current-08" value="08">Texture № 8</option>
+           <option id="texture-current-09" value="09">Texture № 9</option>
+           <option id="texture-current-10" value="10">Texture № 10</option>
+           <option id="texture-current-11" value="11">Texture № 11</option>
+           <option id="texture-current-12" value="12">Texture № 12</option>
+           <option id="texture-current-13" value="13">Texture № 13</option>
+           <option id="texture-current-14" value="14">Texture № 14</option>
+           <option id="texture-current-15" value="15">Texture № 15</option>
+           <option id="texture-current-16" value="16">Texture № 16</option>
+        </select>
+      </div>
+      <div class="textures-list-wrapper">
+        <h3 class="large-font">Background Textures</h3>
+        <select id="newTexture" size="4">
+          <option id="texture-new-01" value="01">Texture № 1</option>
+          <option id="texture-new-02" value="02">Texture № 2</option>
+          <option id="texture-new-03" value="03">Texture № 3</option>
+          <option id="texture-new-04" value="04">Texture № 4</option>
+          <option id="texture-new-05" value="05">Texture № 5</option>
+          <option id="texture-new-06" value="06">Texture № 6</option>
+          <option id="texture-new-07" value="07">Texture № 7</option>
+          <option id="texture-new-08" value="08">Texture № 8</option>
+          <option id="texture-new-09" value="09">Texture № 9</option>
+          <option id="texture-new-10" value="10">Texture № 10</option>
+          <option id="texture-new-11" value="11">Texture № 11</option>
+          <option id="texture-new-12" value="12">Texture № 12</option>
+          <option id="texture-new-13" value="13">Texture № 13</option>
+          <option id="texture-new-14" value="14">Texture № 14</option>
+          <option id="texture-new-15" value="15">Texture № 15</option>
+          <option id="texture-new-16" value="16">Texture № 16</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="control-panel body-font-color-panel">
+      <h3 class="large-font">Body Font Color</h3>
+      <p class="small-font">Choose a Custom Body Font Color</p>
+      <div id="colorpickerHolder1"></div>
+    </div>
+
+    <div class="control-panel header-font-color-panel">
+      <h3 class="large-font">Header Font Color</h3>
+      <p class="small-font">Choose a Custom Heading Color</p>
+      <div id="colorpickerHolder3"></div>
+    </div>
+
+    <div class="contents">
+      <div class="header">
+        <img alt="Chameleon Theme" class="logo" src="images/logo.png">
+        <p>Your Slogan Goes Here</p>
+        <div class="small-menu"></div>
+        <ul class="small-menu-items titles-font">
+          <li>Home</li>
+          <li>Articles</li>
+          <li>Categories</li>
+          <li>Authors</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <a class="large-font" href="#">Home</a>
+          </li>
+          <li>
+            <a class="large-font" href="#">Articles</a>
+          </li>
+          <li>
+            <a class="large-font" href="#">Categories</a>
+          </li>
+          <li>
+            <a class="large-font" href="#">Autors</a>
+          </li>
+          <li>
+            <a class="large-font" href="#">About</a>
+          </li>
+          <li>
+            <a class="large-font" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="top-panel">
+          <div class="social-icons">
+            <a href="#"><img alt="Twitter" src="images/twitter.png"></a>
+            <a href="#"><img alt="Rss" src="images/rss.png"></a>
+            <a href="#"><img alt="Facebook" src="images/facebook.png"></a>
+          </div>
+
+          <div class="search">
+            <form id="search-form" method="get">
+              <input class="search-input" name="s" type="text" value="Search this site...">
+              <input class="search-btn" src="images/search_btn.png" type="image">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div id="wrapper">
+        <div class="home-header">
+          <ul class="home-menu">
+            <li>
+              <a class="medium-font" href="#">Home</a>
+            </li>
+            <li>
+              <a class="medium-font" href="#">Articles</a>
+            </li>
+            <li>
+              <a class="medium-font" href="#">Categories</a>
+            </li>
+            <li>
+              <a class="medium-font" href="#">Autors</a>
+            </li>
+            <li>
+              <a class="medium-font" href="#">About</a>
+            </li>
+            <li>
+              <a class="medium-font" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slider-container">
+          <div class="slider">
+            <ul class="slides">
+              <li class="slide slide-active">
+                <img alt="Slide 1 Caption" src="slides/slide01.png">
+                <div>
+                  <h2 class="body-caption-font">
+                    <a href="#">Article №1</a>
+                  </h2>
+                  <p>Nullam at massa orci. Nulla suscipit adipiscing tincidunt. Donec purus arcu, posuere et pellentesque vitae, mattis in dui. Ut quis mi in erat blandit porta a sed risus. Maecenas nibh nisl, blandit in vestibulum non, pharetra id erat. Aenean vulputate elementum velit. Sed sed...</p>
+                  <a href="#">Read More</a>
+                </div>
+              </li>
+              <li class="slide">
+                <img alt="Slide 2 Caption" src="slides/slide02.png">
+                <div>
+                  <h2 class="body-caption-font">
+                    <a href="#">Article №2</a>
+                  </h2>
+                  <p>Nullam at massa orci. Nulla suscipit adipiscing tincidunt. Donec purus arcu, posuere et pellentesque vitae, mattis in dui. Ut quis mi in erat blandit porta a sed risus. Maecenas nibh nisl, blandit in vestibulum non, pharetra id erat. Aenean vulputate elementum velit. Sed sed...</p>
+                  <a href="#">Read More</a>
+                </div>
+              </li>
+              <li class="slide">
+                <img alt="Slide 3 Caption" src="slides/slide03.png">
+                <div>
+                  <h2 class="body-caption-font">
+                    <a href="#">Article №3</a>
+                  </h2>
+                  <p>Nullam at massa orci. Nulla suscipit adipiscing tincidunt. Donec purus arcu, posuere et pellentesque vitae, mattis in dui. Ut quis mi in erat blandit porta a sed risus. Maecenas nibh nisl, blandit in vestibulum non, pharetra id erat. Aenean vulputate elementum velit. Sed sed...</p>
+                  <a href="#">Read More</a>
+                </div>
+              </li>
+              <li class="slide">
+                <img alt="Slide 4 Caption" src="slides/slide02.png">
+                <div>
+                  <h2 class="body-caption-font">
+                    <a href="#">Article №4</a>
+                  </h2>
+                  <p>Nullam at massa orci. Nulla suscipit adipiscing tincidunt. Donec purus arcu, posuere et pellentesque vitae, mattis in dui. Ut quis mi in erat blandit porta a sed risus. Maecenas nibh nisl, blandit in vestibulum non, pharetra id erat. Aenean vulputate elementum velit. Sed sed...</p>
+                  <a href="#">Read More</a>
+                </div>
+              </li>
+            </ul>
+            <ol class="slides-nav">
+              <li class="slides-nav-active">0</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ol>
+            <ul class="slides-nav-arrows">
+              <li class="slide-btn slide-prev-btn"></li>
+              <li class="slide-btn slide-next-btn"></li>
+            </ul>
+          </div>
+          <div class="slides-top-shadow"></div>
+          <div class="slides-bottom-shadow"></div>
+        </div>
+
+        <div class="controllers"></div>
+
+        <div class="home-caption">
+          <div>
+            <h3 class="body-caption-font">"Chameleon is an extremely versatile theme with a myriad of options and styles"</h3>
+            <p class="titles-font">Aliquam venenatis enim in mi iaculis in tempor lectus tempor et convallis erat pellentesque</p>
+          </div>
+        </div>
+
+        <div class="home-content">
+          <div class="articles">
+            <div class="article">
+              <h3 class="titles-font">Some information here</h3>
+              <div>
+                <a href="#">
+                  <img alt="Article № 1" src="thumbs/thumb01.png">
+                  <span></span>
+                </a>
+              </div>
+              <p>Aliquam eleifend lacus ac tellus volutpat porttitor. Suspendisse imperdiet tortor ut tortor bibendum pulvinar. Nam est mi, accumsan sit amet vestibulum in, cursus vitae orci. Nunc varius adipiscing mi.
+              </p>
+            </div>
+
+            <div class="article">
+              <h3 class="titles-font">Some information here</h3>
+              <div>
+                <a href="#">
+                  <img alt="Article № 2" src="thumbs/thumb02.png">
+                  <span></span>
+                </a>
+              </div>
+              <p>Nam commodo dignissim felis vitae ullamcorper. Sed volutpat velit id purus bibendum placerat. Sed porta, nulla ac interdum ullamcorper, mi orci porta eros, nec commodo ligula dolor et arcu.</p>
+            </div>
+
+            <div class="article">
+              <h3 class="titles-font">Some information here</h3>
+              <div>
+                <a href="#">
+                  <img alt="Article № 3" src="thumbs/thumb03.png">
+                  <span></span>
+                </a>
+              </div>
+              <p>Integer egestas ultricies urna vitae molestie. Donec nec facilisis nisi. Vivamus tempor feugiat velit gravida vehicula. Donec faucibus pellentesque ipsum id varius. Ut rutrum metus sed neque ultricies a dictum.</p>
+            </div>
+          </div>
+
+          <div class="blog-posts">
+            <h3 class="titles-font">From The Blog</h3>
+            <ul>
+              <li>
+                <a href="#">Integer egestas</a>
+              </li>
+              <li>
+                <a href="#">Donec nec facilisis</a>
+              </li>
+              <li>
+                <a href="#">Donec faucibus</a>
+              </li>
+              <li>
+                <a href="#">Ut rutrum metus</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mm-bar">
+            <h3 class="titles-font">Multi Media Bar</h3>
+            <div class="mm-control">
+              <a href="#" class="mm-left-arrow"></a>
+              <a href="#" class="mm-right-arrow"></a>
+              <div id="mm-slides">
+                <div class="mm-slide mm-slide-active">
+
+                  <div class="mm-thumb">
+                    <a href="mm-thumbs/1.jpg" rel="media" title="Make A Wish">
+                      <img alt="Integer egestas" class="mm-image" src="mm-thumbs/1-thumb.png">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis porta nibh, a...</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+
+                  <div class="mm-thumb">
+                    <a class="video-thumb" href="mm-thumbs/2.jpg" rel="media" title="The Morning Dew">
+                      <img alt="The Morning Dew" class="mm-image" src="mm-thumbs/2-thumb.jpg">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;...</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+
+                  <div class="mm-thumb">
+                    <a href="mm-thumbs/5.jpg" title="Purple Haze">
+                      <img alt="Purple Haze" class="mm-image" src="mm-thumbs/5-thumb.png">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Nullam at massa orci. Nulla suscipit adipiscing tincidunt. Donec purus arcu, posuere et...</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+
+                  <div class="mm-thumb">
+                    <a class="video-thumb" href="mm-thumbs/6.jpg" rel="media" title="Bridge To Nowhere">
+                      <img alt="Bridge To Nowhere" class="mm-image" src="mm-thumbs/6-thumb.png">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Donec sed metus ipsum, laoreet suscipit purus. Fusce ante lorem, luctus et tincidunt...</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+
+                  <div class="mm-thumb">
+                    <a href="mm-thumbs/1.jpg" rel="media" title="The Lonely Ladybug">
+                      <img alt="The Lonely Ladybug" class="mm-image" src="mm-thumbs/1-thumb.png">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Nullam at massa orci. Nulla suscipit adipiscing tincidunt. Donec purus arcu, posuere et...</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+
+                  <div class="mm-thumb">
+                    <a class="video-thumb" href="mm-thumbs/2.jpg" title="Monkeys Take a Bath">
+                      <img alt="Monkeys Take a Bath" class="mm-image"  src="mm-thumbs/2-thumb.jpg">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Vivamus sit amet quam lacus, et suscipit massa. Morbi eget ligula vitae massa...</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+
+                  <div class="mm-thumb">
+                    <a href="mm-thumbs/5.jpg" rel="media" title="Birds of Beauty">
+                      <img alt="Birds of Beauty" class="mm-image" src="mm-thumbs/5-thumb.png">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Sed sed tellus ac turpis mollis euismod. Ut eget justo non felis sollicitudin suscipit....</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mm-slide">
+                  <div class="mm-thumb">
+                    <a class="video-thumb" href="mm-thumbs/6.png" rel="media" title="Summer Wheat">
+                      <img alt="Summer Wheat" class="mm-image" src="mm-thumbs/6-thumb.png">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Donec sed metus ipsum, laoreet suscipit purus. Fusce ante lorem, luctus et tincidunt...</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+
+                  <div class="mm-thumb">
+                    <a href="mm-thumbs/1.jpg" title="Calm Before The Storm">
+                      <img alt="Calm Before The Storm" class="multi-media-image" src="mm-thumbs/1-thumb.png">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Donec auctor ullamcorper nunc, vitae pellentesque mi fringilla posuere. Maecenas semper...</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+
+                  <div class="mm-thumb">
+                    <a class="video-thumb" href="mm-thumbs/2.jpg" rel="media" title="Bamboo Shoots">
+                      <img alt="Bamboo Shoots" class="mm-image" src="mm-thumbs/2-thumb.jpg">
+                      <span class="mm-icon"></span>
+                    </a>
+                    <div class="normal-font">
+                      <p>Etiam cursus, nibh in suscipit tincidunt, ante enim scelerisque lacus, sed consectetur...</p>
+                      <span class="mm-hint-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="f-cols">
+          <div class="f-col">
+            <p>
+              <img alt="" src="images/logo-small.png">
+            </p>
+            <p class="cr-sign">&copy; Chameleon theme 2010</p>
+            <p>Cras euismod, sapien ut accumsan feugiat, mauris erat auctor metus, sed pellentesque massa tellus non enim. Aliquam commodo, risus sed posuere eleifend, odio nisi rhoncus nisl, vitae pharetra sem arcu non dui.</p>
+          </div>
+          <div class="f-col">
+            <h4 class="col-title titles-font">Recent Posts</h4>
+            <ul>
+              <li>
+                <a href="#">Make A Wish</a>
+              </li>
+              <li>
+                <a href="#">The Morning Dew</a>
+              </li>
+              <li>
+                <a href="#">Purple Haze</a>
+              </li>
+              <li>
+                <a href="#">Bridge To Nowhere</a>
+              </li>
+              <li>
+                <a href="#">The Lonely Ladybug</a>
+              </li>
+              <li>
+                <a href="#">Monkeys Take a Bath</a>
+              </li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4 class="col-title titles-font">Text Widget</h4>
+            <p>Pellentesque sodales odio nec justo bibendum vitae porttitor metus luctus. Nulla volutpat, arcu in convallis imperdiet, arcu velit auctor purus, a rutrum nunc neque at elit. Cras euismod, sapien ut accumsan feugiat, mauris erat auctor metus, sed pellentesque massa tellus non enim.</p>
+          </div>
+          <div class="f-col">
+            <h4 class="col-title titles-font">Recent Comments</h4>
+            <ul>
+              <li>
+                <a class="url" href="#" rel="external nofollow">New Theme: DeepFocus- Elegant Themes Blog</a>
+              </li>
+              <li>
+                <a href="#">At vero eos et accusamus et iusto</a>
+              </li>
+              <li>
+                <a href="#">Urna eget erat non purus</a>
+              </li>
+              <li>
+                <a href="#">Neque porro quisquam est qui</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="cr-text">Designed by &nbsp;
+          <a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant WordPress Themes</a>
+          | Powered by &nbsp;
+          <a href="http://www.wordpress.org">WordPress</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
