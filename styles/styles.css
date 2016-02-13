@@ -575,7 +575,9 @@ img {
 }
 
 .category-content {
-  flex-flow: column;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
 .articles {
@@ -587,6 +589,8 @@ img {
 .category-articles {
   width: 68%;
   margin-bottom: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
@@ -664,6 +668,18 @@ img {
   height: 186px;
 }
 
+.article-content a {
+  border: solid 1px #eaeaea;
+  border-radius: 5px;
+  color: #1d1d1d;
+  font-family: 'Kreon Light', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 27px;
+  text-align: right;
+  margin-left: 5px;
+  padding: 5px;
+}
+
 .articles .article span {
   opacity: 0;
   top: 50%;
@@ -680,14 +696,62 @@ img {
   margin-left: 5px;
 }
 
-.blog-posts {
+.read-more {
+  text-align: right;
+}
+
+.category-articles ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.category-articles ul li {
+  text-align: right;
+}
+
+.category-articles ul li a {
+  display: block;
+  width: 26px;
+  box-sizing: border-box;
+  border: solid 1px #eaeaea;
+  border-radius: 5px;
+  color: #1d1d1d;
+  font-family: 'Kreon Light', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.category-articles ul li a:hover {
+  background-color: #f6f6f6;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  box-sizing: border-box;
+  padding-left: 25px;
+}
+
+.side-bar .section {
+  margin: 30px 0 0 0;
+}
+
+.side-bar .section:first-of-type {
+  margin: 0;
+}
+
+.blog-posts, section {
   margin-left: 5px;
   width: 223px;
   margin-right: 85px;
   text-shadow: 1px 1px 1px #fff;
 }
 
-.blog-posts .titles-font {
+.blog-posts .titles-font, .section .titles-font {
   margin-bottom: 2px;
   color: #1d1d1d;
   font-family: 'Kreon Light', Arial, sans-serif;
@@ -695,12 +759,12 @@ img {
   text-shadow: 1px 1px 1px #fff;
 }
 
-.blog-posts ul li {
+.blog-posts ul li, .section ul li {
   padding: 4px 16px;
   background: url(../images/sidebar-bullet.png) no-repeat 0 12px;
 }
 
-.blog-posts a {
+.blog-posts a, .section a {
   color: #929292;
 }
 
@@ -945,6 +1009,10 @@ img {
      text-transform: uppercase;
      padding: 30px;
      cursor: pointer;
+   }
+
+   .small-menu-items li a {
+     color: #929292;
    }
 
    .small-menu-items li:hover {
