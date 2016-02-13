@@ -1,0 +1,430 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+    <link href="styles/colorpicker/colorpicker.css" rel="stylesheet" type="text/css">
+    <link href="styles/colorpicker/layout.css" rel="stylesheet" type="text/css">
+    <!-- <link href="styles/bootstrap/bootstrap.css" rel="stylesheet" type="text/css"> -->
+    <link href="styles/fonts.css" rel="stylesheet" type="text/css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="lib/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="lib/colorpicker/colorpicker.js"></script>
+    <script type="text/javascript" src="lib/colorpicker/eye.js"></script>
+    <script type="text/javascript" src="lib/colorpicker/utils.js"></script>
+    <script type="text/javascript" src="lib/colorpicker/layout.js?ver=1.0.2"></script>
+
+    <title>Chameleon Theme - Your Slogan Goes Here</title>
+
+  </head>
+  <body>
+    <div class="control-panel main">
+      <a href="#" id="trigger">
+        <div></div>
+      </a>
+      <div class="cp-icons-wrapper">
+        <div class="cp-icon-container">
+          <a id="bg-color-icon" href="#">
+            <img src="images/cp-color-icon.png">
+          </a>
+        </div>
+        <div class="cp-icon-container">
+          <a id="bg-texture-icon" href="#">
+            <img src="images/cp-texture-icon.png">
+          </a>
+        </div>
+        <div class="cp-icon-container">
+          <a id="bg-texture-text-icon" href="#">
+            <img src="images/cp-bg-texture-text-icon.png">
+          </a>
+        </div>
+        <div class="cp-icon-container">
+          <a id="cp-body-font-color-icon" href="#">
+            <img src="images/cp-body-font-color-icon.png">
+          </a>
+        </div>
+        <div class="cp-icon-container">
+          <a id="cp-header-font-color-icon" href="#">
+            <img src="images/cp-header-font-color-icon.png">
+          </a>
+        </div>
+      </div>
+      <div class="cp-binds-wrapper">
+        <div id="bg-color-bind" class="hover-bind"></div>
+        <div id="bg-texture-bind" class="hover-bind"></div>
+        <div id="bg-texture-text-bind" class="hover-bind"></div>
+        <div id="body-font-color-bind" class="hover-bind"></div>
+        <div id="header-font-color-bind" class="hover-bind"></div>
+      </div>
+      <div class="cp-bg-gradient"></div>
+      <div class="reset small-font">Reset</div>
+    </div>
+
+    <div id="" class="control-panel bg-colors-panel">
+      <h3 class="large-font">Background Color</h3>
+      <p class="small-font">Choose a Custom Background Color</p>
+      <div id="colorpickerHolder2"></div>
+    </div>
+
+    <div class="control-panel bg-textures-panel">
+      <h3 class="large-font">Background Textures</h3>
+      <p class="small-font">Choose a custom BG image</p>
+      <div class="textures-icons-wrapper">
+        <div>
+          <img id="texture-01" src="images/texture-icons/texture-icon-01.png">
+        </div>
+        <div>
+          <img id="texture-02" src="images/texture-icons/texture-icon-02.png">
+        </div>
+        <div>
+          <img id="texture-03" src="images/texture-icons/texture-icon-03.png">
+        </div>
+        <div>
+          <img id="texture-04" src="images/texture-icons/texture-icon-04.png">
+        </div>
+        <div>
+          <img id="texture-05" src="images/texture-icons/texture-icon-05.png">
+        </div>
+        <div>
+          <img id="texture-06" src="images/texture-icons/texture-icon-06.png">
+        </div>
+        <div>
+          <img id="texture-07" src="images/texture-icons/texture-icon-07.png">
+        </div>
+        <div>
+          <img id="texture-08" src="images/texture-icons/texture-icon-08.png">
+        </div>
+        <div>
+          <img id="texture-09" src="images/texture-icons/texture-icon-09.png">
+        </div>
+        <div>
+          <img id="texture-10" src="images/texture-icons/texture-icon-10.png">
+        </div>
+        <div>
+          <img id="texture-11" src="images/texture-icons/texture-icon-11.png">
+        </div>
+        <div>
+          <img id="texture-12" src="images/texture-icons/texture-icon-12.png">
+        </div>
+        <div>
+          <img id="texture-13" src="images/texture-icons/texture-icon-13.png">
+        </div>
+        <div>
+          <img id="texture-14" src="images/texture-icons/texture-icon-14.png">
+        </div>
+        <div>
+          <img id="texture-15" src="images/texture-icons/texture-icon-15.png">
+        </div>
+        <div>
+          <img id="texture-16" src="images/texture-icons/texture-icon-16.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="control-panel bg-textures-text-panel">
+      <div class="textures-list-wrapper">
+        <h3 class="large-font">Background Textures</h3>
+        <select id="currentTexture" size="4" disabled>
+           <option id="texture-current-01" value="01">Texture № 1</option>
+           <option id="texture-current-02" value="02">Texture № 2</option>
+           <option id="texture-current-03" value="03">Texture № 3</option>
+           <option id="texture-current-04" value="04">Texture № 4</option>
+           <option id="texture-current-05" value="05" selected>Texture № 5</option>
+           <option id="texture-current-06" value="06">Texture № 6</option>
+           <option id="texture-current-07" value="07">Texture № 7</option>
+           <option id="texture-current-08" value="08">Texture № 8</option>
+           <option id="texture-current-09" value="09">Texture № 9</option>
+           <option id="texture-current-10" value="10">Texture № 10</option>
+           <option id="texture-current-11" value="11">Texture № 11</option>
+           <option id="texture-current-12" value="12">Texture № 12</option>
+           <option id="texture-current-13" value="13">Texture № 13</option>
+           <option id="texture-current-14" value="14">Texture № 14</option>
+           <option id="texture-current-15" value="15">Texture № 15</option>
+           <option id="texture-current-16" value="16">Texture № 16</option>
+        </select>
+      </div>
+      <div class="textures-list-wrapper">
+        <h3 class="large-font">Background Textures</h3>
+        <select id="newTexture" size="4">
+          <option id="texture-new-01" value="01">Texture № 1</option>
+          <option id="texture-new-02" value="02">Texture № 2</option>
+          <option id="texture-new-03" value="03">Texture № 3</option>
+          <option id="texture-new-04" value="04">Texture № 4</option>
+          <option id="texture-new-05" value="05">Texture № 5</option>
+          <option id="texture-new-06" value="06">Texture № 6</option>
+          <option id="texture-new-07" value="07">Texture № 7</option>
+          <option id="texture-new-08" value="08">Texture № 8</option>
+          <option id="texture-new-09" value="09">Texture № 9</option>
+          <option id="texture-new-10" value="10">Texture № 10</option>
+          <option id="texture-new-11" value="11">Texture № 11</option>
+          <option id="texture-new-12" value="12">Texture № 12</option>
+          <option id="texture-new-13" value="13">Texture № 13</option>
+          <option id="texture-new-14" value="14">Texture № 14</option>
+          <option id="texture-new-15" value="15">Texture № 15</option>
+          <option id="texture-new-16" value="16">Texture № 16</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="control-panel body-font-color-panel">
+      <h3 class="large-font">Body Font Color</h3>
+      <p class="small-font">Choose a Custom Body Font Color</p>
+      <div id="colorpickerHolder1"></div>
+    </div>
+
+    <div class="control-panel header-font-color-panel">
+      <h3 class="large-font">Header Font Color</h3>
+      <p class="small-font">Choose a Custom Heading Color</p>
+      <div id="colorpickerHolder3"></div>
+    </div>
+
+    <div class="contents">
+      <div class="header">
+        <img alt="Chameleon Theme" class="logo" src="images/logo.png">
+        <p>Your Slogan Goes Here</p>
+        <div class="small-menu"></div>
+        <ul class="small-menu-items titles-font">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Authors</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <a class="large-font" href="home.html">Home</a>
+          </li>
+          <li>
+            <a class="large-font" href="articles.html">Articles</a>
+          </li>
+          <li>
+            <a class="large-font" href="#">Categories</a>
+          </li>
+          <li>
+            <a class="large-font" href="#">Autors</a>
+          </li>
+          <li>
+            <a class="large-font" href="#">About</a>
+          </li>
+          <li>
+            <a class="large-font" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="top-panel">
+
+          <div class="search">
+            <form id="search-form" method="get">
+              <input class="search-input" name="s" type="text" value="Search this site...">
+              <input class="search-btn" src="images/search_btn.png" type="image">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="wrapper">
+        <div class="category-caption inner-caption">
+          <div>
+            <div>
+              <h3 class="body-caption-font">Category Title Here</h3>
+              <p class="titles-font">Category Description Goes Right Here</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-content inner-content">
+          <div class="category-articles">
+            <div class="article">
+              <h3 class="body-caption-font">Post Title Goes Right Here</h3>
+              <div class="article-info large-font">
+                Posted by <span>Admin</span> on March 13, 2011 in <span>Some category</span> | 30 Comments
+              </div>
+              <div class="article-thumb">
+                <a href="#">
+                  <img alt="Article № 1" src="thumbs/thumb01.png">
+                </a>
+              </div>
+              <div class="article-content">
+                <p>
+                  Aliquam eleifend lacus ac tellus volutpat porttitor. Suspendisse imperdiet tortor ut tortor bibendum pulvinar. Nam est mi, accumsan sit amet vestibulum in, cursus vitae orci. Nunc varius adipiscing mi.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="read-more">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="article">
+              <h3 class="body-caption-font">Post Title Goes Right Here</h3>
+              <div class="article-info large-font">
+                Posted by <span>Admin</span> on March 13, 2011 in <span>Some category</span> | 30 Comments
+              </div>
+              <div class="article-thumb">
+                <a href="#">
+                  <img alt="Article № 2" src="thumbs/thumb02.png">
+                </a>
+              </div>
+              <div class="article-content">
+                <p>
+                  Aliquam eleifend lacus ac tellus volutpat porttitor. Suspendisse imperdiet tortor ut tortor bibendum pulvinar. Nam est mi, accumsan sit amet vestibulum in, cursus vitae orci. Nunc varius adipiscing mi.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="read-more">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="article">
+              <h3 class="body-caption-font">Post Title Goes Right Here</h3>
+              <div class="article-info large-font">
+                Posted by <span>Admin</span> on March 13, 2011 in <span>Some category</span> | 30 Comments
+              </div>
+              <div class="article-thumb">
+                <a href="#">
+                  <img alt="Article № 3" src="thumbs/thumb03.png">
+                </a>
+              </div>
+              <div class="article-content">
+                <p>
+                  Aliquam eleifend lacus ac tellus volutpat porttitor. Suspendisse imperdiet tortor ut tortor bibendum pulvinar. Nam est mi, accumsan sit amet vestibulum in, cursus vitae orci. Nunc varius adipiscing mi.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="read-more">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+          </div>
+
+          <div class="side-bar">
+            <div class="section">
+              <h3 class="titles-font">From The Blog</h3>
+              <ul>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h3 class="titles-font">Archives</h3>
+              <ul>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h3 class="titles-font">Recent Posts</h3>
+              <ul>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="f-cols">
+          <div class="f-col">
+            <p>
+              <img alt="" src="images/logo-small.png">
+            </p>
+            <p class="cr-sign">&copy; Chameleon theme 2010</p>
+            <p>Cras euismod, sapien ut accumsan feugiat, mauris erat auctor metus, sed pellentesque massa tellus non enim. Aliquam commodo, risus sed posuere eleifend, odio nisi rhoncus nisl, vitae pharetra sem arcu non dui.</p>
+          </div>
+          <div class="f-col">
+            <h4 class="col-title titles-font">Recent Posts</h4>
+            <ul>
+              <li>
+                <a href="#">Make A Wish</a>
+              </li>
+              <li>
+                <a href="#">The Morning Dew</a>
+              </li>
+              <li>
+                <a href="#">Purple Haze</a>
+              </li>
+              <li>
+                <a href="#">Bridge To Nowhere</a>
+              </li>
+              <li>
+                <a href="#">The Lonely Ladybug</a>
+              </li>
+              <li>
+                <a href="#">Monkeys Take a Bath</a>
+              </li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4 class="col-title titles-font">Text Widget</h4>
+            <p>Pellentesque sodales odio nec justo bibendum vitae porttitor metus luctus. Nulla volutpat, arcu in convallis imperdiet, arcu velit auctor purus, a rutrum nunc neque at elit. Cras euismod, sapien ut accumsan feugiat, mauris erat auctor metus, sed pellentesque massa tellus non enim.</p>
+          </div>
+          <div class="f-col">
+            <h4 class="col-title titles-font">Recent Comments</h4>
+            <ul>
+              <li>
+                <a class="url" href="#" rel="external nofollow">New Theme: DeepFocus- Elegant Themes Blog</a>
+              </li>
+              <li>
+                <a href="#">At vero eos et accusamus et iusto</a>
+              </li>
+              <li>
+                <a href="#">Urna eget erat non purus</a>
+              </li>
+              <li>
+                <a href="#">Neque porro quisquam est qui</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="cr-text">Designed by &nbsp;
+          <a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant WordPress Themes</a>
+          | Powered by &nbsp;
+          <a href="http://www.wordpress.org">WordPress</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
