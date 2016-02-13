@@ -939,7 +939,7 @@ img {
   text-decoration: underline;
 }
 
-@media only all and (max-width: 960px) {
+@media only all and (max-width: 990px) {
   .contents {
     max-width: 768;
   }
@@ -965,7 +965,7 @@ img {
   }
 }
 
-@media only all and (max-width: 768px) {
+@media only all and (max-width: 796px) {
   .contents {
     max-width: 480px;
   }
@@ -1069,7 +1069,7 @@ img {
   }
 }
 
-@media only all and (max-width: 480px) {
+@media only all and (max-width: 509px) {
   .control-panel {
     display: none;
   }
