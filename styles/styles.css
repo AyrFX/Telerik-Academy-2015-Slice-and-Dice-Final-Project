@@ -542,32 +542,40 @@ img {
   padding-bottom: 14px;
 }
 
-.home-caption {
+.inner-caption {
   text-align: center;
   padding: 38px 48px 0 48px;
-  background: url(../images/home-caption-top-bg.png) no-repeat;
 }
 
-.home-caption div {
+.inner-caption > div {
   background: url(../images/home-caption-bottom-bg.png) no-repeat bottom left;
   padding-bottom: 28px;
 }
 
-.home-caption .body-caption-font {
+.inner-caption > div > div {
+  background: url(../images/home-caption-top-bg.png) no-repeat top left;
+  padding-top: 28px;
+}
+
+.inner-caption .body-caption-font {
   color: #3b3b3b;
   font-family: 'Kreon Light', Arial, sans-serif;
   font-weight: lighter;
 }
 
-.home-caption p {
+.inner-caption p {
   font-family: 'Kreon Light', Arial, sans-serif;
   font-weight: lighter;
 }
 
-.home-content {
+.inner-content {
   padding: 45px 48px 60px;
   display: flex;
   flex-flow: row wrap;
+}
+
+.category-content {
+  flex-flow: column;
 }
 
 .articles {
@@ -576,18 +584,57 @@ img {
   justify-content: space-between;
 }
 
+.category-articles {
+  width: 68%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
 .article {
   width: 28%;
 }
 
-.article .titles-font {
+.category-articles .article {
+  width: 100%;
+  margin-top: 45px;
+  margin-top: 70px;
+}
+
+.category-articles .article:first-of-type {
+  margin-top: 0;
+}
+
+.article .titles-font, .article .body-caption-font {
   margin: 0 0 4px 5px;
   color: #1d1d1d;
   font-family: 'Kreon Light', Arial, sans-serif;
   font-weight: lighter;
 }
 
-.article div {
+.article .body-caption-font {
+  padding-bottom: 15px;
+  margin-left: 0;
+}
+
+.article-info {
+  font-family: 'Kreon Light', Arial, sans-serif;
+  font-weight: lighter;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-top: solid 1px #f0f0f0;
+  border-bottom: solid 1px #f0f0f0;
+  color: #d0d0d0;
+}
+
+.article-info span {
+  color: #929292;
+  font-weight: normal;
+}
+
+.article-thumb {
   /*border: 1px solid #d4d4d4;*/
   border: 1px solid #f0f0f0;
   /*box-shadow: 0 0 1px rgba(0,0,0,0.1);*/
@@ -596,11 +643,28 @@ img {
   margin-bottom: 10px;
 }
 
-.article img {
+.article-thumb {
+  float: left;
+  margin-right: 25px;
+}
+
+.article-thumb img {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.08);
 }
 
-.article span {
+.category-articles .article-thumb {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  padding: 7px;
+}
+
+.category-articles .article-thumb img {
+  width: 186px;
+  height: 186px;
+}
+
+.articles .article span {
   opacity: 0;
   top: 50%;
   left: 50%;
