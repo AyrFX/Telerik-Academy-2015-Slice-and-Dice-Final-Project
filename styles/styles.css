@@ -1029,7 +1029,6 @@ img {
   }
 
   .home-content {
-    padding-top: 0;
     padding-bottom: 0;
   }
 
@@ -1048,7 +1047,7 @@ img {
     margin-bottom: 0;
   }
 
-  .article .titles-font, .article div {
+  .article .titles-font, .article .body-caption-font, .article div {
     text-align: center;
   }
 
@@ -1066,6 +1065,27 @@ img {
 
   .f-cols {
     display: none;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .category-articles {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .article div p {
+    text-align: left;
+  }
+
+  .article div div {
+    text-align: right;
+  }
+
+  .article .article-info {
+    text-align: left;
   }
 }
 
@@ -1122,5 +1142,9 @@ img {
     padding: 28px;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+
+  .article-thumb {
+    display: none;
   }
 }
